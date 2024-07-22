@@ -1,0 +1,102 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #353535;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Dark blue gradient background */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure body covers full height */
+    overflow: auto; /* Enable scrolling */
+}
+
+.main {
+    min-height: 90vh; /* Allow main container to expand */
+    width: 90%; /* Adjust width to be responsive */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 20px;
+    padding: 20px; /* Add padding to main container */
+}
+
+.unitInput {
+    background-color: #6943FF;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add some padding */
+    width: 100%; /* Full width of the parent */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-bottom: 20px; /* Add some spacing between sections */
+}
+
+.converter {
+    background-color: #F4F4F4;
+    padding: 20px; /* Add some padding */
+    width: 100%; /* Full width of the parent */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: white;
+    -webkit-text-stroke: 1px black; /* width of the stroke, color */
+    text-shadow: 2px 2px 4px #000000; /* combined with text shadow */
+}
+
+input {
+    width: 80%; /* Adjust width to be more responsive */
+    max-width: 200px; /* Set a maximum width */
+    height: auto;
+    font-size: 48px;
+    text-align: center;
+    border: 2px solid #B295FF;
+    background-color: #6943FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px; /* Add padding for better touch targets */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+#convert-btn {
+    background-color: white;
+    border-radius: 5px;
+    width: 80%; /* Make button responsive */
+    max-width: 200px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add media query for better responsiveness */
+@media (max-width: 600px) {
+    .main {
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 36px;
+    }
+
+    #convert-btn {
+        width: 80%;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
